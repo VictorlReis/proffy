@@ -3,9 +3,19 @@ import db from "../database/connection";
 import bcrypt from 'bcryptjs';
 import jwt from 'jsonwebtoken';
 import auth from '../config/auth';
+import * as Yup from 'yup';
 
 export default class SessionController {
     async create(request: Request, response: Response) {
+
+        const schema = Yup.object().shape({
+            email: Yup.string().required(),
+            password: Yup.string().required()
+        })
+
+        if(!(await schema.isValid(request.body))) {
+            return response.status(400).json({error: 'Validation fails'});
+        }
 
         const trx = await db.transaction();
 

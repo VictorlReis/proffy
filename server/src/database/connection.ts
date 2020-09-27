@@ -6,6 +6,7 @@ const db = knex({
     connection: {
         filename: path.resolve(__dirname, 'database.sqlite')
     },
+    pool: {min: 0, max: 7},
     useNullAsDefault: true,
 });
 
