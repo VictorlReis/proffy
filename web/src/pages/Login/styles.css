@@ -1,0 +1,81 @@
+#page-login {
+    width: 100vw;
+    height: 100vh;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color: var(--color-text-in-primary);
+}
+
+.container-proffy {
+    background: var(--color-primary);
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+.container-login {
+    color: #9C98A6;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.container-login form {
+    align-content: center;
+    margin-top: 12rem;
+}
+
+.container-login form .input-block + .input-block{
+    margin-top: 0;
+}
+
+.container-login form h1 {
+    color: #32264D;
+    margin-bottom: 20px;
+}
+
+.container-login form input[type=text] {
+    width: 352px;
+    height: 72px;
+    margin-top: 0;
+    border: 1px solid #E6E6F0;
+}
+
+.container-login form button {
+    width: 352px;   
+    height: 72px;
+    background: #DCDCE5;
+    color: #9C98A6;
+    border: 0;
+    border-radius: 0.8rem;
+    cursor: pointer;
+    font: 700 1.6rem Archivo;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: background-color 0.2s;
+    margin-top: 3.2rem;
+}
+
+.container-login form div {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-login form div input {
+    height: 20px;
+    width: 20px;
+    border: 1px solid #E6E6F0;
+    border-radius: 8px;
+}
+
+.container-login form div label {
+    margin-left: -40px;
+}
+
+.container-login form div a {
+    text-decoration: none;
+}
