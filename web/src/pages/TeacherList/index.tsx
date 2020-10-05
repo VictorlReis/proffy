@@ -47,6 +47,15 @@ function TeacherList() {
                             { value: 'Matemática', label: 'Matemática'}
                         ]}
                     ></Select>
+
+                    {
+                        subject === 'Artes' ?
+                            <div>
+                                <h1>Teste</h1>
+                                <h2>Teste</h2>
+                            </div> 
+                            : ''
+                    }
                     <Select 
                         name="week-day" 
                         label="Dia da semana" 

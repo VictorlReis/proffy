@@ -42,6 +42,14 @@
     border: 1px solid #E6E6F0;
 }
 
+.container-login form input[type=password] {
+    width: 352px;
+    height: 72px;
+    margin-top: 0;
+    border: 1px solid #E6E6F0;
+}
+
+
 .container-login form button {
     width: 352px;   
     height: 72px;
@@ -57,6 +65,11 @@
     text-decoration: none;
     transition: background-color 0.2s;
     margin-top: 3.2rem;
+}
+
+.container-login form button:hover {
+    background: var(--color-secundary);
+    color: white;
 }
 
 .container-login form div {
@@ -77,5 +90,17 @@
 }
 
 .container-login form div a {
-    text-decoration: none;
+    text-decoration: none;    
+    color: #9C98A6;
 }
+
+.container-login footer {
+    display: grid;
+    grid-template-columns: 4fr 2fr;
+}
+
+.container-login footer a {
+    font-weight: bold;
+    color: var(--color-primary);
+}
+

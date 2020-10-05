@@ -42,8 +42,11 @@ export default class SessionController {
             });
 
             return response.json({
-                auth: true,
-                token: token
+                token: token,
+                user: {
+                    name: users[0].name,
+                    email: users[0].email
+                }
             })
             
         } catch(err) {
