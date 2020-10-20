@@ -10,6 +10,12 @@
     background: var(--color-primary);
 }
 
+.teste {
+    margin-bottom: 40rem;
+    background-color: var(--color-primary);
+    border: none;
+}
+
 .logo-container {
     height: 10rem;    
 }
